@@ -7,7 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="menu-container">
       <div class="header">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
-        <img alt="WebGL logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
+        <h1>+</h1>
+        <img alt="WebGL logo" class="logo" src="@/assets/webgl-logo.png" width="100" height="50" />
       </div>
       <nav class="menu">
         <RouterLink to="/">Triangle</RouterLink>
@@ -22,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 .wrapper {
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-areas: 'menu columns';
   grid-template-columns: 20rem auto;
@@ -31,6 +32,7 @@ import { RouterLink, RouterView } from 'vue-router'
   & .header {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: center;
 
     & .logo {
